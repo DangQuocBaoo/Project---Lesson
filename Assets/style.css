@@ -10,3 +10,93 @@ body {
     font-size: 1.6rem;
     font-family: Poppins, sans-serif;
 }
+
+/* Common */
+
+.btn {
+    display: inline-block;
+    padding: 0px 12px;
+    line-height: 50px;
+    background-color: #171100;
+    border-radius: 25px;
+    text-align: center;
+    min-width: 118px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+.content {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: calc(100% - 48px);
+}
+
+/* Header*/
+
+.header.fixed {
+    position: sticky;
+    z-index: 1;
+    top: -32px;
+    background-color: #fffcf4;
+}
+.header .body {
+    padding-top: 36px;
+    display: flex;
+    align-items: center;
+}
+.body .nav {
+    display: flex;
+    margin-left: 512px;
+}
+
+.nav li {
+    padding: 0px 21px;
+}
+.nav li a {
+    position: relative;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #5f5b53;
+}
+
+.nav li:hover a::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    width: 12px;
+    height: 2px;
+    background: #171100;
+    border-radius: 1px;
+}
+
+.nav li:hover a {
+    text-shadow: 1px 0 0 black; /* Thủ thuật thay thế font-weight*/
+    line-height: 1.75;
+    color: #171100;
+}
+
+.body .action {
+    margin-left: 42px;
+}
+
+.action .btn-header {
+    min-width: 144px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+
+.action .btn-header:hover {
+    background-color: #5f5b53;
+}
+
+/* Hero */
