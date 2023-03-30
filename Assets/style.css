@@ -106,6 +106,7 @@ ul {
     display: flex;
 }
 
+/* HERO LEFT */
 .hero .media-block {
     position: relative;
     width: 48%;
@@ -160,6 +161,8 @@ ul {
 
     color: #171100;
 }
+
+/* HERO RIGHT */
 .hero .content-block {
     width: 52%;
     padding-left: 130px;
@@ -237,4 +240,145 @@ ul {
     padding-right: 8px;
     padding-left: 28px;
     color: #171100;
+}
+
+/* POPULAR */
+
+.popular {
+    padding: 200px 0px;
+}
+.popular .popular-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.popular .title {
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 1.26;
+
+    letter-spacing: -0.02em;
+
+    color: #171100;
+}
+
+.popular-block .desc {
+    max-width: 458px;
+    padding-top: 16px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5f5b53;
+}
+.popular-block .arr {
+    display: flex;
+    align-items: center;
+}
+.popular-block .left,
+.popular-block .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ffb900;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #ffb900;
+}
+
+.popular-block .right {
+    margin-left: 18px;
+}
+
+.popular-block .left:hover,
+.popular-block .right:hover {
+    background-color: #ffb900;
+    color: #ffffff;
+}
+
+/* POPULAR BOOKING */
+.book-item .book-info {
+    padding: 12px 22px 22px 22px;
+}
+.popular .book-list {
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 12px 12px 0px 0px;
+}
+.popular .book-item {
+    width: 370px;
+    height: 466px;
+    background-color: #ffffff;
+    border: 1px solid #e2dfda;
+    border-radius: 12px;
+}
+.popular .book-item:hover {
+    background-color: #ffffff;
+    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    border-color: transparent;
+}
+
+.book-list .book-img {
+    width: 370px;
+    height: 278px;
+    object-fit: cover;
+    border-radius: 12px 12px 0px 0px;
+    margin: -1px;
+}
+
+.book-item .heading {
+    display: flex;
+    align-items: center;
+}
+
+.book-item .title {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+.book-item .desc {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #5f5b53;
+    margin-top: 6px;
+}
+.book-item .star {
+    margin-left: 119px;
+}
+
+.book-item .rate {
+    margin-left: 6px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #fea31b;
+}
+
+.book-item .book-now {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+}
+
+.book-item .price {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+.book-now .popular-btn {
+    font-weight: 600;
+    font-size: 1.4rem;
+
+    color: #ffffff;
+}
+.book-now .popular-btn:hover {
+    background-color: #ffb900;
+    cursor: pointer;
 }
