@@ -60,6 +60,7 @@ ul {
 }
 .header .body {
     padding-top: 36px;
+    padding-bottom: 4px;
     display: flex;
     align-items: center;
 }
@@ -461,11 +462,14 @@ ul {
     color: #ffffff;
     margin-left: 30px;
 }
+/* Total */
 .total {
     padding: 200px 0px;
 }
 .total .total-block {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .total-block .img-total {
@@ -487,7 +491,7 @@ ul {
 }
 
 .total-block .total-info {
-    margin-left: 130px;
+    width: 41%;
     margin-top: 58px;
 }
 .total-info .heading {
@@ -519,5 +523,44 @@ ul {
 .total-info .total-btn {
     min-width: 137px;
     margin-top: 32px;
+    background-color: #ffb900;
+}
+/* GOAL */
+.goal .body {
+    display: flex;
+    justify-content: space-between;
+}
+.goal .goal-info {
+    width: 570px;
+    margin-top: 71px;
+}
+.goal-info .heading {
+    font-family: Sen, sans-serif;
+    font-weight: 500;
+    font-size: 3.9rem;
+    line-height: 1.26;
+
+    letter-spacing: -0.02em;
+
+    color: #171100;
+}
+.goal-info .desc {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #5f5b53;
+    margin-top: 16px;
+}
+.goal .goal-img {
+    width: 470px;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.goal-info .goal-btn {
+    margin-top: 32px;
+    width: 137px;
+    border-radius: 26px;
     background-color: #ffb900;
 }
