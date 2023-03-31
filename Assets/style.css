@@ -12,7 +12,16 @@ body {
 }
 
 /* Common */
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 
+.line-clamp.line2 {
+    --line-clamp: 2;
+}
 .btn {
     display: inline-block;
     padding: 0px 12px;
@@ -256,9 +265,7 @@ ul {
     font-weight: 700;
     font-size: 3.8rem;
     line-height: 1.26;
-
     letter-spacing: -0.02em;
-
     color: #171100;
 }
 
@@ -269,6 +276,7 @@ ul {
     font-size: 1.8rem;
     line-height: 1.67;
     color: #5f5b53;
+    word-break: break-all;
 }
 .popular-block .arr {
     display: flex;
@@ -381,4 +389,75 @@ ul {
 .book-now .popular-btn:hover {
     background-color: #ffb900;
     cursor: pointer;
+}
+
+/* FEEDBACK */
+.feedback {
+    padding: 96px 0px;
+    background-color: #2e2100;
+}
+.feedback .feedback-block {
+    display: flex;
+}
+.feedback .fb-user {
+    width: 35%;
+}
+
+.fb-user .user {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.fb-info .fb-name {
+    margin-top: 18px;
+    font-family: Sen, sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.42;
+
+    color: #f7f7f7;
+}
+.fb-info .fb-job {
+    margin-top: 4px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+
+    color: #bfbcb3;
+}
+.fb-user .dot {
+    margin-top: 28px;
+    display: flex;
+    gap: 6px;
+}
+.dot .dot-off {
+    width: 6px;
+    height: 6px;
+    background-color: #634700;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.dot .dot-active {
+    width: 6px;
+    height: 6px;
+    background-color: #ffb900;
+    border-radius: 50%;
+    cursor: default;
+}
+
+.feedback .fb-quote {
+    width: 65%;
+    margin-left: auto;
+}
+
+.fb-quote .quote {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2.6rem;
+    line-height: 1.54;
+    color: #ffffff;
+    margin-left: 30px;
 }
