@@ -526,6 +526,9 @@ ul {
     background-color: #ffb900;
 }
 /* GOAL */
+.goal {
+    padding-bottom: 200px;
+}
 .goal .body {
     display: flex;
     justify-content: space-between;
@@ -563,4 +566,128 @@ ul {
     width: 137px;
     border-radius: 26px;
     background-color: #ffb900;
+}
+
+/* BLOG */
+.blog {
+    padding: 96px 0px;
+    background-color: #fffcf4;
+}
+.blog .blog-block {
+    width: 448px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-block .heading {
+    font-family: Sen, sans-serif;
+    font-weight: 600;
+    font-size: 3.8rem;
+    line-height: 1.26;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #130606;
+}
+
+.blog-block .desc {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #696262;
+    text-align: center;
+}
+
+.blog .blog-list {
+    margin-top: 55px;
+    display: flex;
+    gap: 30px;
+    overflow: hidden;
+}
+.blog-list .blog-item {
+    background-color: #ffffff;
+    border-radius: 16px;
+    flex-shrink: 0;
+    width: calc(33.33% - 20px);
+}
+.blog-list .blog-img {
+    width: 370px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.blog-list .blog-date {
+    display: flex;
+    position: relative;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.86;
+    color: #5f5b53;
+    padding-bottom: 12px;
+}
+.blog-list .blog-date::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #ffb900;
+    margin-right: 4px;
+}
+.blog-list .blog-date::after {
+    position: absolute;
+    content: "";
+    width: 160px;
+    height: 1px;
+    bottom: 0;
+    background-color: #e2dfda;
+    border-radius: 0.5px;
+}
+.blog-info {
+    padding: 20px 20px 28px 20px;
+}
+.blog-info:hover {
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+}
+.blog-info .blog-desc {
+    display: block;
+    margin-top: 12px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+
+    color: #171100;
+}
+
+.blog-info .blog-btn {
+    min-width: 118px;
+    line-height: 50px;
+    margin-top: 12px;
+}
+
+.blog-info .blog-btn:hover {
+    background-color: #ffb900;
+}
+
+.blog .dot {
+    margin-top: 38px;
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+}
+.blog .dot-off {
+    width: 6px;
+    height: 6px;
+    background-color: #634700;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.blog .dog .dot-active {
+    width: 6px;
+    height: 6px;
+    background-color: #ffb900;
+    border-radius: 50%;
+    cursor: default;
 }
